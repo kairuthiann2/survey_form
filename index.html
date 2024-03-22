@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!--start of heading section-->
+    <header class="text-center">
+      <h1 id="title">Birding Club Survey Form</h1>
+      <p id="description">Thankyou for joining us in this survey</p>
+    </header>
+
+    <!--start of form input section-->
+    <form id="survey-form">
+      <!--Name input-->
+      <label id="name-label">Name
+        <input id="name" type="text" placeholder="Enter your name" required />
+
+      </label><br>
+      <!--Email input-->
+      <label id="email-label">Email
+        <input id="email" type="email" placeholder="Enter your Email" required />
+      </label><br>
+      <!--Contact input-->
+      <label id="contact-label">Contact
+        <input id="contact" type="number" placeholder="Enter your contact" required />
+      </label><br>
+      <!--contact input-->
+      <label id="number-label">Age
+        <input id="number" type="number" min="0" placeholder="Enter your Age" required />
+      </label><br>
+      <!--end of form input section-->
+
+      <!--select section-->
+      <div id="dropdown-menu">
+        <p>How would you rate your birdwatching experience level?</p>
+        <select id="dropdown">
+          <option value="">Select Current Level</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+      <!--end of select section-->
+
+      <div id="input-labels">
+        <p>How often do you go birdwatching?</p>
+        <input type="radio" name="text" value="text1" />
+        <label for="text1" id="label">Daily</label><br>
+        <input type="radio" name="text" value="text2" />
+        <label for="text2" id="label">Weekly</label><br>
+        <input type="radio" name="text" value="text3" />
+        <label for="text3" id="label">Monthly</label><br>
+        <input type="radio" name="text" value="text4" />
+        <label for="text4" id="label">Occasionally</label><br>
+      </div>
+      <!--checkbox section-->
+      <div id="checkbox">
+        <p>Which of the following club activities interest you?</p>
+        <label id="checkbox1"><input type="checkbox" value="checkbox1" />Birdwatching outings</label><br>
+        <label id="checkbox1"><input type="checkbox" value="checkbox1" />Conservation projects</label><br>
+        <label id="checkbox1"><input type="checkbox" value="checkbox1" />Bird identification classes</label><br>
+        <label id="checkbox1"><input type="checkbox" value="checkbox1" />Bird photography workshops</label><br>
+      </div>
+      <!--End of checkbox section-->
+      <!--textarea-->
+      <div>
+        <p id="feedback">Are there any specific activities or events you would like to see the club organize in the
+          future?</p><br>
+        <textarea id="activities" name="activities" rows="5" cols="33" class="textarea"
+          placeholder="Give your feedback..."></textarea><br>
+        <!--end of textarea-->
+        <!--button-->
+        <button id="submit" type="submit" class="btn">submit</button>
+        <!--End of button-->
+      </div>
+
+
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
